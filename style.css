@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f4f7fb;
+}
+
+.topbar {
+  background: #1e7f5c;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card p {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.status.on {
+  color: green;
+}
+
+.badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.badge.ok {
+  background: #d4edda;
+  color: #155724;
+}
+
+.middle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.weather, .decision {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.decision-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #d9534f;
+}
+
+.charts {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
