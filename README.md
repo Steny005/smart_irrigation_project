@@ -161,19 +161,11 @@ Decision API:
 ---
 
 ## Use Cases
-
 - Smart agriculture
 - Automated irrigation
 - Water conservation
-- AI + IoT integration demos
-
 ---
-
 ## Future Enhancements
-
-- Real ESP32 sensor integration
-- Manual pump control
-- Cloud deployment
 - Mobile app support
 
 ---
