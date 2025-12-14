@@ -16,6 +16,50 @@ An intelligent irrigation management system that combines sensor data, machine l
 
 ---
 
+## How to Run the Project (Local Setup)
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- Python 3.9 or higher
+- Internet connection
+
+---
+
+### Step 1: Start ML Service (FastAPI)
+
+Open Terminal 1:
+
+cd backend/ml  
+pip install fastapi uvicorn joblib numpy pymongo requests  
+uvicorn app:app --port 8000  
+
+Verify:
+http://localhost:8000/docs
+
+---
+
+### Step 2: Start Backend Server (Node.js)
+
+Open Terminal 2:
+
+cd backend  
+npm install  
+npm run dev  
+
+Verify:
+http://localhost:5000/api/sensors/latest
+
+---
+
+### Step 3: Open Frontend Dashboard
+
+Open the following file in browser or using Live Server:
+
+frontend/index.html
+
+---
+
 ## System Architecture
 
 Sensor Data
@@ -74,50 +118,6 @@ Weather API:
 
 ---
 
-## How to Run the Project (Local Setup)
-
-### Prerequisites
-
-- Node.js (v16 or higher)
-- Python 3.9 or higher
-- Internet connection
-
----
-
-### Step 1: Start ML Service (FastAPI)
-
-Open Terminal 1:
-
-cd backend/ml  
-pip install fastapi uvicorn joblib numpy pymongo requests  
-uvicorn app:app --port 8000  
-
-Verify:
-http://localhost:8000/docs
-
----
-
-### Step 2: Start Backend Server (Node.js)
-
-Open Terminal 2:
-
-cd backend  
-npm install  
-npm run dev  
-
-Verify:
-http://localhost:5000/api/sensors/latest
-
----
-
-### Step 3: Open Frontend Dashboard
-
-Open the following file in browser or using Live Server:
-
-frontend/index.html
-
----
-
 ## API Endpoints
 
 Sensor APIs:
@@ -152,28 +152,17 @@ Decision API:
 
 ---
 
-## Demo Notes
-
-- Initial UI values are placeholders
-- Live data replaces placeholders once backend services are running
-- Flat graphs indicate stable sensor values during testing
-
----
 
 ## Use Cases
 
 - Smart agriculture
 - Automated irrigation
 - Water conservation
-- AI + IoT integration demos
+
 
 ---
 
 ## Future Enhancements
-
-- Real ESP32 sensor integration
-- Manual pump control
-- Cloud deployment
 - Mobile app support
 ---
 
