@@ -3,6 +3,7 @@ const cors = require("cors");
 const connectDB = require("./config/db");
 
 const sensorRoutes = require("./routes/sensorRoutes");
+const decisionRoutes = require("./routes/decisionRoutes");
 
 const app = express();
 
@@ -24,4 +25,5 @@ app.listen(5000, () => {
 
 app.use("/api/sensors", sensorRoutes);
 
+app.use("/api/decision", decisionRoutes);
 
