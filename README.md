@@ -175,9 +175,7 @@ Decision API:
 - Manual pump control
 - Cloud deployment
 - Mobile app support
-
 ---
 
 ## License
-
 This project is intended for educational and demonstration purposes only.
